@@ -224,7 +224,19 @@ This project was made possible with the help of [ChatGPT](https://chatgpt.com/).
 
 ## Deliverables
 
-Deliverables go here ...
+### Mock-Up
+
+The following GIF shows the web application's appearance and functionality:
+
+![Existing notes are listed in the left-hand column with empty fields on the right-hand side for the new note’s title and text.](./Assets/11-express-homework-demo.gif)
+
+### Deployed Render URL
+
+The URL of the functional, deployed application.
+
+### GitHub Link
+
+https://github.com/ngojohn2002/11-Express-js-Note-Taker
 
 [Back to Table of Contents](#table-of-contents)
 
