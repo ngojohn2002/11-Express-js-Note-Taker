@@ -5,10 +5,7 @@ body {
   padding: 0;
 }
 
-/* Hide elements on smaller screens initially */
-.save-note,
-.new-note,
-.clear-btn {
+.save-note, .new-note, .clear-btn {
   display: none;
 }
 
@@ -29,7 +26,7 @@ body {
 
 .note-textarea {
   resize: none;
-  height: calc(100% - 63px); /* Adjusted for better responsiveness */
+  height: calc(100% - 63px);
   padding-top: 15px;
 }
 
@@ -45,7 +42,7 @@ body {
 }
 
 .list-container .card {
-  height: calc(100vh - 70px); /* Adjusted for better responsiveness */
+  height: calc(100vh - 70px);
   border-bottom: none;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
@@ -78,28 +75,4 @@ body {
   border-right: none;
   padding: 20px;
   cursor: pointer;
-}
-
-/* Media Queries for Responsive Design */
-
-/* Adjust styles for tablets and larger */
-@media (min-width: 768px) {
-  .note-textarea {
-    height: calc(100% - 83px); /* Adjusted for tablets */
-  }
-  
-  .list-container .card {
-    height: calc(100vh - 80px); /* Adjusted for tablets */
-  }
-}
-
-/* Adjust styles for desktops */
-@media (min-width: 1024px) {
-  .note-textarea {
-    height: calc(100% - 93px); /* Adjusted for desktops */
-  }
-  
-  .list-container .card {
-    height: calc(100vh - 90px); /* Adjusted for desktops */
-  }
 }

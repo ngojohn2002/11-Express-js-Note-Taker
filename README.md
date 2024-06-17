@@ -2,12 +2,15 @@
 
 ![License](https://img.shields.io/badge/License-MIT-blue.svg)
 
-## Description
-
-The Note Taker application is a comprehensive note management system that allows users to write, save, delete, and manage their notes efficiently. It uses an Express.js back end to store and retrieve note data from a JSON file, ensuring smooth integration with the front end. Key features include the ability to create, view, save, and delete notes, each identified by a unique ID. The application is deployed to Render, a cloud platform for hosting web applications. This project is designed to help small business owners and individuals organize their tasks and thoughts effectively, providing a reliable solution for keeping notes in order.
-
 ## Table of Contents
 
+- [Description](#description)
+- [User Story](#user-story)
+- [Acceptance Criteria](#acceptance-criteria)
+- [Current Capabilities](#current-capabilities)
+- [Limitations](#limitations)
+- [Future Growth Potential](#future-growth-potential)
+- [Learning Journey and Skills Demonstrated](#learning-journey-and-skills-demonstrated)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Tests](#tests)
@@ -17,6 +20,81 @@ The Note Taker application is a comprehensive note management system that allows
 - [Deliverables](#deliverables)
 - [Questions](#questions)
 - [License](#license)
+- [Additional Resources](#additional-resources)
+
+## Description
+
+The [Note Taker](https://ngojohn2002-express-js-note-taker.onrender.com) application is a basic note management system that allows users to create, save, and manage their notes. The user-friendly front end enables easy creation, viewing, and management of notes, while the back end uses Express.js to store and retrieve note data from a JSON file, ensuring seamless integration. Each note is uniquely identified, facilitating precise data management. Deployed on [Render](https://render.com), this project serves as a functional prototype for individuals to organize their tasks and thoughts.
+
+[Back to Table of Contents](#table-of-contents)
+
+## User Story
+
+```md
+AS A small business owner
+I WANT to be able to write and save notes
+SO THAT I can organize my thoughts and keep track of tasks I need to complete
+```
+
+[Back to Table of Contents](#table-of-contents)
+
+## Acceptance Criteria
+
+```md
+GIVEN a note-taking application
+WHEN I open the Note Taker
+THEN I am presented with a landing page with a link to a notes page
+WHEN I click on the link to the notes page
+THEN I am presented with a page with existing notes listed in the left-hand column, plus empty fields to enter a new note title and the note’s text in the right-hand column
+WHEN I enter a new note title and the note’s text
+THEN a "Save Note" button and a "Clear Form" button appear in the navigation at the top of the page
+WHEN I click on the Save button
+THEN the new note I have entered is saved and appears in the left-hand column with the other existing notes and the buttons in the navigation disappear
+WHEN I click on an existing note in the list in the left-hand column
+THEN that note appears in the right-hand column and a "New Note" button appears in the navigation
+WHEN I click on the "New Note" button in the navigation at the top of the page
+THEN I am presented with empty fields to enter a new note title and the note’s text in the right-hand column and the button disappears
+```
+
+[Back to Table of Contents](#table-of-contents)
+
+## Current Capabilities
+
+- **Add Notes**: Users can create new notes with a title and content.
+- **View Notes**: Users can view a list of existing notes and their details.
+- **Delete Notes**: Users can delete notes, which are removed from the JSON file.
+
+[Back to Table of Contents](#table-of-contents)
+
+## Limitations
+
+- **Single JSON File Storage**: All notes from different users are stored in the same JSON file, meaning any user can see all notes.
+- **No User Authentication**: The app does not have a system for user accounts or log-in profiles, which limits privacy and personalized note management.
+
+[Back to Table of Contents](#table-of-contents)
+
+## Future Growth Potential
+
+- **User Authentication**: Implementing user log-in profiles to store notes securely and privately.
+- **Database Integration**: Transitioning from JSON file storage to a database (e.g., MongoDB, PostgreSQL) for better scalability and data management.
+- **Installer Packaging**: Providing a simple installer for users to quickly download, install, and use the app on their local machines.
+- **Enhanced Features**: Adding functionalities such as note modification, categorization, search capabilities, and cloud synchronization.
+
+[Back to Table of Contents](#table-of-contents)
+
+## Learning Journey and Skills Demonstrated
+
+Building this Note Taker application has been an invaluable learning experience. Here are the technologies and skills I have developed:
+
+- **Front-End Development**: Created a user-friendly interface using HTML, CSS, and JavaScript.
+- **Back-End Development**: Utilized Express.js to handle server-side operations and manage note data.
+- **Data Management**: Implemented JSON file storage for handling note data, with plans to transition to more scalable database solutions.
+- **Deployment**: Deployed the application on Render, gaining experience in cloud hosting and deployment processes.
+- **Version Control**: Managed the project using Git and GitHub, following best practices for version control and collaboration.
+
+As a newcomer to these technologies, I am continuously learning and improving. This project showcases my potential to contribute effectively to a development team or pursue a freelance career. I am eager to leverage my growing skill set to become a valuable asset to potential employers or clients.
+
+[Back to Table of Contents](#table-of-contents)
 
 ## Installation
 
@@ -50,8 +128,11 @@ To install the Note Taker application, follow these steps:
 Using the Note Taker application is straightforward. Follow these steps:
 
 1. **Open the Application**: 
-   - If running locally, open your web browser and go to `http://localhost:3001`.
-   - If deployed, visit the URL provided by Render where your application is hosted.
+   - If running locally, follow the steps in section [Installation](#installation) above to start your server on port 3001, then open your web browser and go to `http://localhost:3001`.
+   - Alternatively, you can visit the live deployed app on Render's website by clicking on [https://ngojohn2002-express-js-note-taker.onrender.com](https://ngojohn2002-express-js-note-taker.onrender.com). 
+
+      > **Note: Monitoring and Potential Delays**  
+      The application is hosted on Render's free tier, which may cause delays of up to 50 seconds after periods of inactivity. To minimize this, I use [UptimeRobot](https://uptimerobot.com/) and [Better Uptime](https://betteruptime.com/) for regular monitoring. However, occasional delays may still occur. Thank you for your understanding and patience as I work to improve this experience.
 
 2. **Landing Page**: 
    - You will be presented with a landing page. Click the link or button to navigate to the notes page.
@@ -64,7 +145,7 @@ Using the Note Taker application is straightforward. Follow these steps:
    - **Clearing the Form**: If you want to clear the fields without saving, click the "Clear Form" button in the navigation bar.
 
 4. **Managing Notes**:
-   - **Viewing Existing Notes**: Click on any note in the list on the left to view its details on the right. This allows you to see and edit the contents of your notes.
+   - **Viewing Existing Notes**: Click on any note in the list on the left to view its details on the right. This allows you to see the contents of your notes.
    - **Deleting a Note**: Click the delete button next to each note in the list to remove the note. The note will be deleted from the JSON file and the list will update accordingly.
 
 [Back to Table of Contents](#table-of-contents)
@@ -79,8 +160,8 @@ Ensure you have followed the installation instructions and have the application 
 ### 2. **Test User Interface**
 
 #### Landing Page
-- **Open the Application**: Navigate to the URL where your application is running (e.g., `http://localhost:3001` or the deployed Render URL).
-- **Verify Navigation**: Click the link/button to go to the notes page. Ensure it navigates correctly.
+- **Open the Application**: Navigate to the URL where your application is running (e.g., `http://localhost:3001` or the deployed Render URL [https://ngojohn2002-express-js-note-taker.onrender.com/](https://ngojohn2002-express-js-note-taker.onrender.com/)).
+- **Verify Navigation**: Click the `Get Started` button to go to the notes page and `Note Taker` button on the top left corner to go back. Ensure it navigates correctly.
 
 #### Notes Page
 - **Viewing Notes**: 
@@ -180,7 +261,7 @@ The Note Taker application utilizes the following API endpoints:
 
 ## Contribution
 
-We welcome contributions from the community! Here's how you can get involved:
+I welcome contributions from the community! Here's how you can get involved:
 
 ### 1. Fork the Repository
 
@@ -264,15 +345,15 @@ This project was made possible with the help of [ChatGPT](https://chatgpt.com/).
 
 The following GIF shows the web application's appearance and functionality:
 
-![Existing notes are listed in the left-hand column with empty fields on the right-hand side for the new note’s title and text.](./Assets/11-express-homework-demo.gif)
+![Existing notes are listed in the left-hand column with empty fields on the right-hand side for the new note’s title and text.](./Assets/11-Express-js-Note-Taker-demo.gif)
 
 ### Deployed Render URL
 
-The URL of the functional, deployed application.
+The URL of the functional, deployed application is [Note Taker on Render](https://ngojohn2002-express-js-note-taker.onrender.com).
 
-### GitHub Link
+### GitHub Repository
 
-https://github.com/ngojohn2002/11-Express-js-Note-Taker
+Find the source code and further details on the GitHub repository: [11-Express-js-Note-Taker](https://github.com/ngojohn2002/11-Express-js-Note-Taker)
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -287,10 +368,26 @@ For any questions or feedback, please reach out to me:
 
 ## License
 
-This project is licensed under the [MIT](./LICENSE) license.
+This project is licensed under the [MIT](./LICENSE) license.  
+![License](https://img.shields.io/badge/License-MIT-blue.svg)
+
+[Back to Table of Contents](#table-of-contents)
+
+## Additional Resources
+
+For further reading and resources to help you develop similar applications, consider the following:
+
+- **Express.js Documentation**: [Express.js](https://expressjs.com/)
+- **Node.js Documentation**: [Node.js](https://nodejs.org/)
+- **Render Documentation**: [Render](https://render.com/docs)
+- **Markdown Guide**: [Markdown Guide](https://www.markdownguide.org/)
+- **Postman**: [Postman](https://www.postman.com/) - A powerful tool for API testing
+
+These resources have been instrumental in developing this project and can provide valuable insights and tools for your own projects.
 
 [Back to Table of Contents](#table-of-contents)
 
 ---
 
 Copyright &copy; 2024 - All Rights Reserved.
+
