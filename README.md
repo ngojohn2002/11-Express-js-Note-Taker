@@ -347,13 +347,23 @@ The following GIF shows the web application's appearance and functionality:
 
 ![Existing notes are listed in the left-hand column with empty fields on the right-hand side for the new note’s title and text.](./Assets/11-Express-js-Note-Taker-demo.gif)
 
-### Deployed Render URL
+### Link to Execution Video
 
-The URL of the functional, deployed application is [Note Taker on Render](https://ngojohn2002-express-js-note-taker.onrender.com).
+Alternatively, you can also view the execution video by clicking on the following link:
 
-### GitHub Repository
+[https://drive.google.com/file/d/1ZrvsjOM2tcjmqTQw5p41lWkyo7WKVKl1/view?usp=sharing](https://drive.google.com/file/d/1ZrvsjOM2tcjmqTQw5p41lWkyo7WKVKl1/view?usp=sharing)
 
-Find the source code and further details on the GitHub repository: [11-Express-js-Note-Taker](https://github.com/ngojohn2002/11-Express-js-Note-Taker)
+### Link to Deployed Render URL
+
+To test it out yourself, here is the link to the Note Taker app deployed on Render: 
+
+[https://ngojohn2002-express-js-note-taker.onrender.com](https://ngojohn2002-express-js-note-taker.onrender.com).
+
+### Link to GitHub Repository
+
+Find the source code and further details on the GitHub repository: 
+
+[https://github.com/ngojohn2002/11-Express-js-Note-Taker](https://github.com/ngojohn2002/11-Express-js-Note-Taker)
 
 [Back to Table of Contents](#table-of-contents)
 
